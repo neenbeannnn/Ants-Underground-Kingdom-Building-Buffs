@@ -1,0 +1,138 @@
+{
+    "buff totals": {
+        "pink": {
+            "alliance": "ARA",
+            "alliance influence sum": 27000,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 10.0,
+            "def shooter sum": 86.0,
+            "def carrier sum": 48.0,
+            "guardian output sum": 22,
+            "shooter output sum": 0,
+            "carrier output sum": 17
+        },
+        "brown": {
+            "alliance": "LAO",
+            "alliance influence sum": 0.0,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 0.0,
+            "def shooter sum": 0.0,
+            "def carrier sum": 0.0,
+            "guardian output sum": 0,
+            "shooter output sum": 0,
+            "carrier output sum": 0
+        },
+        "green": {
+            "alliance": "SEE",
+            "alliance influence sum": 0.0,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 0.0,
+            "def shooter sum": 0.0,
+            "def carrier sum": 0.0,
+            "guardian output sum": 0,
+            "shooter output sum": 0,
+            "carrier output sum": 0
+        },
+        "purple": {
+            "alliance": "SeN",
+            "alliance influence sum": 0.0,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 0.0,
+            "def shooter sum": 0.0,
+            "def carrier sum": 0.0,
+            "guardian output sum": 0,
+            "shooter output sum": 0,
+            "carrier output sum": 0
+        },
+        "teal": {
+            "alliance": "TAO",
+            "alliance influence sum": 0.0,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 0.0,
+            "def shooter sum": 0.0,
+            "def carrier sum": 0.0,
+            "guardian output sum": 0,
+            "shooter output sum": 0,
+            "carrier output sum": 0
+        }
+    },
+    "highest buffs": {
+        "alliance influence": [
+            27000,
+            "ARA"
+        ],
+        "hp guardian sum": [
+            0.0,
+            ""
+        ],
+        "hp shooter sum": [
+            0.0,
+            ""
+        ],
+        "hp carrier sum": [
+            0.0,
+            ""
+        ],
+        "atk guardian sum": [
+            0.0,
+            ""
+        ],
+        "atk shooter sum": [
+            0.0,
+            ""
+        ],
+        "atk carrier sum": [
+            0.0,
+            ""
+        ],
+        "def guardian sum": [
+            10.0,
+            "ARA"
+        ],
+        "def shooter sum": [
+            86.0,
+            "ARA"
+        ],
+        "def carrier sum": [
+            48.0,
+            "ARA"
+        ],
+        "guardian output sum": [
+            22,
+            "ARA"
+        ],
+        "shooter output sum": [
+            0,
+            ""
+        ],
+        "carrier output sum": [
+            17,
+            "ARA"
+        ]
+    }
+}
