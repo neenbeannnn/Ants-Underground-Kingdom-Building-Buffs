@@ -1,6 +1,5 @@
-import {useState, useEffect} from "react";
-import { NextUIProvider, Tabs, Tab, Button, ButtonGroup, Table, TableHeader, TableBody, TableColumn, TableRow, TableCell, getKeyValue, Divider} from "@nextui-org/react";
-import '../styles/AllianceBuffs.css'
+import {useState} from "react";
+import { Tabs, Tab, Button, ButtonGroup, Table, TableHeader, TableBody, TableColumn, TableRow, TableCell, getKeyValue, Divider} from "@nextui-org/react";
 
 const columns = [
 {
@@ -150,7 +149,7 @@ function AllianceBuffs() {
         })
         .then((data) => {
           setAllianceInfo(data)
-          console.log(allianceInfo)
+          console.log(data)
         })
         .catch((error) => {
           console.error('Error: ', error);
@@ -170,7 +169,6 @@ function AllianceBuffs() {
         })
         .then((data) => {
           setAllianceTotalInfo(data)
-          console.log(data)
         })
         .catch((error) => {
           console.error('Error: ', error);

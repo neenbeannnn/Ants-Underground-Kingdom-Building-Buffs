@@ -1,6 +1,6 @@
-import {useState, useEffect} from "react";
-import { NextUIProvider, Tabs, Tab, Button, ButtonGroup, Table, TableHeader, TableBody, TableColumn, TableRow, TableCell, getKeyValue, Divider} from "@nextui-org/react";
+import { NextUIProvider, Tabs, Tab } from "@nextui-org/react";
 import AllianceBuffs from './screens/AllianceBuffs';
+import OverallBuffs from './screens/OverallBuffs';
 import './App.css'
 
 function App() {
@@ -23,10 +23,7 @@ function App() {
             <AllianceBuffs />
           </Tab>
           <Tab key="overall" title="Overall Buffs">
-            <div className="pageContainer p-4">
-              <h1>Overall Buffs</h1>
-              <Divider className="divider" />
-            </div>
+            <OverallBuffs />
           </Tab>
         </Tabs>
       </div>
