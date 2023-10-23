@@ -149,7 +149,6 @@ function AllianceBuffs() {
         })
         .then((data) => {
           setAllianceInfo(data)
-          console.log(data)
         })
         .catch((error) => {
           console.error('Error: ', error);
@@ -201,7 +200,6 @@ function AllianceBuffs() {
             });
           }
           setCurrentAlliances(alliancesArr);
-          console.log(alliancesArr);
         })
         .catch((error) => {
           console.error('Error: ', error);
@@ -220,7 +218,7 @@ function AllianceBuffs() {
           </Tab>
         )}
       </Tabs>
-      <Table className="flex my-4 py-4">
+      <Table className="flex my-4 py-4" aria-label="Alliance buffs table" isHeaderSticky>
         <TableHeader columns={columns}>
           {column => <TableColumn key={column.key}>{column.label}</TableColumn>}
         </TableHeader>
@@ -234,7 +232,7 @@ function AllianceBuffs() {
       </Table>
       <h1>Totals</h1>
       <Divider className="divider" />
-      <Table className="flex my-4 py-4">
+      <Table className="flex my-4 py-4" aria-label="Alliance totals table" isHeaderSticky>
         <TableHeader columns={totalColumns}>
           {column1 => <TableColumn key={column1.key}>{column1.label}</TableColumn>}
         </TableHeader>

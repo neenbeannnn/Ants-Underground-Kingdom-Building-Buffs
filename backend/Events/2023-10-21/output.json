@@ -1,1 +1,143 @@
-{"buff totals": [{"key": 304830775500334657867933357005280571676, "alliance": "ARA", "alliance influence sum": 27000, "hp guardian sum": 0.0, "hp shooter sum": 0.0, "hp carrier sum": 0.0, "atk guardian sum": 0.0, "atk shooter sum": 0.0, "atk carrier sum": 0.0, "def guardian sum": 10.0, "def shooter sum": 86.0, "def carrier sum": 48.0, "guardian output sum": 22, "shooter output sum": 0, "carrier output sum": 17}, {"key": 119764446179570561637904662780938326709, "alliance": "LAO", "alliance influence sum": 0.0, "hp guardian sum": 0.0, "hp shooter sum": 0.0, "hp carrier sum": 0.0, "atk guardian sum": 0.0, "atk shooter sum": 0.0, "atk carrier sum": 0.0, "def guardian sum": 0.0, "def shooter sum": 0.0, "def carrier sum": 0.0, "guardian output sum": 0, "shooter output sum": 0, "carrier output sum": 0}, {"key": 141255995575839045034427859625774991530, "alliance": "SEE", "alliance influence sum": 0.0, "hp guardian sum": 0.0, "hp shooter sum": 0.0, "hp carrier sum": 0.0, "atk guardian sum": 0.0, "atk shooter sum": 0.0, "atk carrier sum": 0.0, "def guardian sum": 0.0, "def shooter sum": 0.0, "def carrier sum": 0.0, "guardian output sum": 0, "shooter output sum": 0, "carrier output sum": 0}, {"key": 81298669246768907963258958588046642253, "alliance": "SeN", "alliance influence sum": 0.0, "hp guardian sum": 0.0, "hp shooter sum": 0.0, "hp carrier sum": 0.0, "atk guardian sum": 0.0, "atk shooter sum": 0.0, "atk carrier sum": 0.0, "def guardian sum": 0.0, "def shooter sum": 0.0, "def carrier sum": 0.0, "guardian output sum": 0, "shooter output sum": 0, "carrier output sum": 0}, {"key": 248027641866010195182549221444776292409, "alliance": "TAO", "alliance influence sum": 0.0, "hp guardian sum": 0.0, "hp shooter sum": 0.0, "hp carrier sum": 0.0, "atk guardian sum": 0.0, "atk shooter sum": 0.0, "atk carrier sum": 0.0, "def guardian sum": 0.0, "def shooter sum": 0.0, "def carrier sum": 0.0, "guardian output sum": 0, "shooter output sum": 0, "carrier output sum": 0}], "highest buffs": {"alliance influence sum": [27000, "ARA"], "hp guardian sum": [0.0, ""], "hp shooter sum": [0.0, ""], "hp carrier sum": [0.0, ""], "atk guardian sum": [0.0, ""], "atk shooter sum": [0.0, ""], "atk carrier sum": [0.0, ""], "def guardian sum": [10.0, "ARA"], "def shooter sum": [86.0, "ARA"], "def carrier sum": [48.0, "ARA"], "guardian output sum": [22, "ARA"], "shooter output sum": [0, ""], "carrier output sum": [17, "ARA"]}}
+{
+    "buff totals": [
+        {
+            "id": 295002445183760863367232457778129882343,
+            "alliance": "ARA",
+            "alliance influence sum": 27000,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 10.0,
+            "def shooter sum": 86.0,
+            "def carrier sum": 48.0,
+            "guardian output sum": 22,
+            "shooter output sum": 0,
+            "carrier output sum": 17
+        },
+        {
+            "id": 258712813747694468965638545672988631953,
+            "alliance": "LAO",
+            "alliance influence sum": 0.0,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 0.0,
+            "def shooter sum": 0.0,
+            "def carrier sum": 0.0,
+            "guardian output sum": 0,
+            "shooter output sum": 0,
+            "carrier output sum": 0
+        },
+        {
+            "id": 100913403695078819789751649747760936590,
+            "alliance": "SEE",
+            "alliance influence sum": 0.0,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 0.0,
+            "def shooter sum": 0.0,
+            "def carrier sum": 0.0,
+            "guardian output sum": 0,
+            "shooter output sum": 0,
+            "carrier output sum": 0
+        },
+        {
+            "id": 105499565473988746160007252310071078916,
+            "alliance": "SeN",
+            "alliance influence sum": 0.0,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 0.0,
+            "def shooter sum": 0.0,
+            "def carrier sum": 0.0,
+            "guardian output sum": 0,
+            "shooter output sum": 0,
+            "carrier output sum": 0
+        },
+        {
+            "id": 274292620692002982624434435072574232326,
+            "alliance": "TAO",
+            "alliance influence sum": 0.0,
+            "hp guardian sum": 0.0,
+            "hp shooter sum": 0.0,
+            "hp carrier sum": 0.0,
+            "atk guardian sum": 0.0,
+            "atk shooter sum": 0.0,
+            "atk carrier sum": 0.0,
+            "def guardian sum": 0.0,
+            "def shooter sum": 0.0,
+            "def carrier sum": 0.0,
+            "guardian output sum": 0,
+            "shooter output sum": 0,
+            "carrier output sum": 0
+        }
+    ],
+    "highest buffs": {
+        "alliance influence sum": [
+            27000,
+            "ARA"
+        ],
+        "hp guardian sum": [
+            0.0,
+            ""
+        ],
+        "hp shooter sum": [
+            0.0,
+            ""
+        ],
+        "hp carrier sum": [
+            0.0,
+            ""
+        ],
+        "atk guardian sum": [
+            0.0,
+            ""
+        ],
+        "atk shooter sum": [
+            0.0,
+            ""
+        ],
+        "atk carrier sum": [
+            0.0,
+            ""
+        ],
+        "def guardian sum": [
+            10.0,
+            "ARA"
+        ],
+        "def shooter sum": [
+            86.0,
+            "ARA"
+        ],
+        "def carrier sum": [
+            48.0,
+            "ARA"
+        ],
+        "guardian output sum": [
+            22,
+            "ARA"
+        ],
+        "shooter output sum": [
+            0,
+            ""
+        ],
+        "carrier output sum": [
+            17,
+            "ARA"
+        ]
+    }
+}

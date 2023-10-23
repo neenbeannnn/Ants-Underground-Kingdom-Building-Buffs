@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {Divider, Button, ButtonGroup, Table, TableHeader, TableBody, TableColumn, TableRow, TableCell, getKeyValue} from "@nextui-org/react";
+import {useAsyncList} from "@react-stately/data";
 import '../styles/OverallBuffs.css';
 
 const totalColumns = [
@@ -87,13 +88,12 @@ function OverallBuffs() {
         <h1>Overall Buffs</h1>
         <Divider className="divider"/>
         <Button onClick={() => getAlliancesTotalInfo('2023-10-21')}>2023-10-21</Button>
-        <Button onClick={() => console.log(alliancesTotalInfo)}>Click me</Button>
-        <Table className="flex my-4 py-4">
+        <Table className="flex my-4 py-4" aria-label="Overall buffs table" isHeaderSticky>
             <TableHeader columns={totalColumns}>
-                {column => <TableColumn key={column.key}>{column.label}</TableColumn>}
+                {column => <TableColumn key={column.key} allowsResizing>{column.label}</TableColumn>}
             </TableHeader>
             <TableBody items={alliancesTotalInfo} emptyContent={"No data to display yet."}>
-                {(item, key) => {return <TableRow key={key}>
+                {(item) => {return <TableRow key={item.key}>
                     {(columnKey) => {return <TableCell>{getKeyValue(item, columnKey)}</TableCell>}}
                 </TableRow>}}
             </TableBody>
