@@ -62,8 +62,32 @@ const totalColumns = [
     }
     ];
 
+function CustomTableCell(item, columnKey) {
+    return <p className="bolded">{getKeyValue(item, columnKey)}</p>
+}
+
 function OverallBuffs() {
     const [alliancesTotalInfo, setAlliancesTotalInfo] = useState([])
+    const [maxBuff, setMaxBuff] = useState({})
+
+    function getMaxBuffs(date) {
+        const requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        }
+        fetch(`http://127.0.0.1:5000/api/getMaxBuffs/${date}`, requestOptions)
+        .then((response) => {
+            if (!response.ok)
+                throw new Error('Error!')
+            return response.json();
+        })
+        .then((data) => {
+            setMaxBuff(data)
+        })
+        .catch((error) => {
+            console.error('Error: ', error);
+        })
+    }
 
     function getAlliancesTotalInfo(date) {
         const requestOptions = {
@@ -77,6 +101,7 @@ function OverallBuffs() {
             return response.json();
         })
         .then((data) => {
+            console.log(data)
             setAlliancesTotalInfo(data)
         })
         .catch((error) => {
@@ -93,7 +118,7 @@ function OverallBuffs() {
                 {column => <TableColumn key={column.key} allowsResizing>{column.label}</TableColumn>}
             </TableHeader>
             <TableBody items={alliancesTotalInfo} emptyContent={"No data to display yet."}>
-                {(item) => {return <TableRow key={item.key}>
+                {(item) => {return <TableRow key={item.id}>
                     {(columnKey) => {return <TableCell>{getKeyValue(item, columnKey)}</TableCell>}}
                 </TableRow>}}
             </TableBody>
