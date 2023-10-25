@@ -1,4 +1,5 @@
 import { NextUIProvider, Tabs, Tab } from "@nextui-org/react";
+import AddBuilding from "./screens/AddBuilding";
 import AllianceBuffs from './screens/AllianceBuffs';
 import OverallBuffs from './screens/OverallBuffs';
 import './App.css'
@@ -15,9 +16,7 @@ function App() {
         </svg>
         <Tabs aria-label="Pages" variant={"solid"}>
           <Tab key="add" title="Add Building">
-            <div className="pageContainer p-4">
-              Add Building page
-            </div>
+            <AddBuilding />
           </Tab>
           <Tab key="alliance" title="Alliance Buffs">
             <AllianceBuffs />
