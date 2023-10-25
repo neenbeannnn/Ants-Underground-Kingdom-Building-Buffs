@@ -62,9 +62,60 @@ const totalColumns = [
     }
     ];
 
-function CustomTableCell(item, columnKey) {
-    return <p className="bolded">{getKeyValue(item, columnKey)}</p>
-}
+const maxColumns = [
+    {
+        key: 'alliance influence sum',
+        label: 'INFLUENCE'
+    },
+    {
+        key: 'hp guardian sum',
+        label: 'HP GUARD (%)'
+    },
+    {
+        key: 'hp shooter sum',
+        label: 'HP SHOOTER (%)'
+    },
+    {
+        key: 'hp carrier sum',
+        label: 'HP CARRIER (%)'
+    },
+    {
+        key: 'atk guardian sum',
+        label: 'ATK GUARD (%)'
+    },
+    {
+        key: 'atk shooter sum',
+        label: 'ATK SHOOTER (%)'
+    },
+    {
+        key: 'atk carrier sum',
+        label: 'ATK CARRIER (%)'
+    },
+    {
+        key: 'def guardian sum',
+        label: 'DEF GUARD (%)'
+    },
+    {
+        key: 'def shooter sum',
+        label: 'DEF SHOOTER (%)'
+    },
+    {
+        key: 'def carrier sum',
+        label: 'DEF CARRIER (%)'
+    },
+    {
+        key: 'guardian output sum',
+        label: 'GUARD OUTPUT (/h)'
+    },
+    {
+        key: 'shooter output sum',
+        label: 'SHOOTER OUTPUT (/h)'
+    },
+    {
+        key: 'carrier output sum',
+        label: 'CARRIER OUTPUT (/h)'
+    }
+];
 
 function OverallBuffs() {
     const [alliancesTotalInfo, setAlliancesTotalInfo] = useState([])
@@ -101,7 +152,6 @@ function OverallBuffs() {
             return response.json();
         })
         .then((data) => {
-            console.log(data)
             setAlliancesTotalInfo(data)
         })
         .catch((error) => {
@@ -109,10 +159,15 @@ function OverallBuffs() {
         })
     }
 
+    function fetchData(date) {
+        getAlliancesTotalInfo(date);
+        getMaxBuffs(date);
+    }
+
     return <div className="pageContainer p-4">
         <h1>Overall Buffs</h1>
         <Divider className="divider"/>
-        <Button onClick={() => getAlliancesTotalInfo('2023-10-21')}>2023-10-21</Button>
+        <Button onClick={() => fetchData('2023-10-21')}>2023-10-21</Button>
         <Table className="flex my-4 py-4" aria-label="Overall buffs table" isHeaderSticky>
             <TableHeader columns={totalColumns}>
                 {column => <TableColumn key={column.key} allowsResizing>{column.label}</TableColumn>}
@@ -123,7 +178,31 @@ function OverallBuffs() {
                 </TableRow>}}
             </TableBody>
         </Table>
-  </div>;
+        <h1>Highest Alliance</h1>
+        <Divider className="divider"/>
+        <Table className="flex my-4 py-4" aria-label="Alliance with highest buffs table" isHeaderSticky>
+            <TableHeader columns={maxColumns}>
+                {column => <TableColumn key={column.key} allowsResizing>{column.label}</TableColumn>}
+            </TableHeader>
+            <TableBody items={maxBuff} emptyContent={"No data to display yet."}>
+                <TableRow>
+                    <TableCell>{maxBuff["alliance influence sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["hp guardian sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["hp shooter sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["hp carrier sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["atk guardian sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["atk shooter sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["atk carrier sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["def guardian sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["def shooter sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["def carrier sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["guardian output sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["shooter output sum"] || "N/A"}</TableCell>
+                    <TableCell>{maxBuff["carrier output sum"] || "N/A"}</TableCell>
+                </TableRow>
+            </TableBody>
+        </Table>
+    </div>;
 }
 
 export default OverallBuffs;
